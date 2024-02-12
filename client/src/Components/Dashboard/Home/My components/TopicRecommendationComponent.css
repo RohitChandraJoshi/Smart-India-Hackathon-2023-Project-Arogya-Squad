@@ -1,0 +1,60 @@
+/* TopicRecommendationComponent.css */
+
+.topic-recommendation {
+    border: 1px solid #ccc;
+    padding: 16px;
+    margin: 16px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .topic-recommendation h2 {
+    color: #333;
+  }
+  
+  .topic-recommendation form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .topic-recommendation label {
+    margin-bottom: 8px;
+  }
+  
+  .topic-recommendation input {
+    padding: 8px;
+    margin-bottom: 16px;
+  }
+  
+  .topic-recommendation button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .topic-recommendation button:disabled {
+    background-color: #d3d3d3;
+    cursor: not-allowed;
+  }
+  
+  .topic-recommendation .recommendations {
+    margin-top: 16px;
+  }
+  
+  .topic-recommendation h3 {
+    color: #333;
+  }
+  
+  .topic-recommendation ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .topic-recommendation li {
+    margin-bottom: 8px;
+  }
+  

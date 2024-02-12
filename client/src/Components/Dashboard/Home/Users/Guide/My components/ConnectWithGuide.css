@@ -1,0 +1,39 @@
+.connect-with-guide {
+  /* position: relative; */
+  border: 0.063rem solid #ccc;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1);
+}
+
+.connect-with-guide h2 {
+  color: #333;
+}
+
+.connect-with-guide button {
+  /* position: relative; */
+  background-color: #007bff;
+  color: #fff;
+  padding: 0.625rem 1rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+/* .connect-with-guide button:disabled {
+  background-color: #d3d3d3;
+  cursor: not-allowed;
+}
+
+.connect-with-guide button::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: -10px;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent transparent #007bff;
+} */

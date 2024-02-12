@@ -1,0 +1,41 @@
+.submit-project-repo {
+    border: 0.063rem solid #ccc;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1);
+  }
+  
+  .submit-project-repo h2 {
+    color: #333;
+  }
+  
+  .submit-project-repo form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .submit-project-repo label {
+    margin-bottom: 0.5rem;
+  }
+  
+  .submit-project-repo input {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .submit-project-repo button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.625rem 1rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+  }
+  
+  .submit-project-repo button:disabled {
+    background-color: #d3d3d3;
+    cursor: not-allowed;
+  }
+  

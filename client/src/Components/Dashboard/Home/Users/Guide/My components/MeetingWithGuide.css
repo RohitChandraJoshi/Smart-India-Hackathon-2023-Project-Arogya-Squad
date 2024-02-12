@@ -1,0 +1,58 @@
+.meeting-with-guide {
+  width: 15.625rem; 
+  padding: 1.25rem; 
+  margin: 1.875rem; 
+  border-radius: 1.875rem;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1);
+  top: 21.875rem; 
+  right: 0.625rem;
+  background-color: #fff; 
+  margin-top: 10rem;
+  text-align: center;
+}
+
+.meeting-with-guide h2 {
+  color: #333;
+}
+
+.meeting-with-guide form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.meeting-with-guide label {
+  margin-bottom: 0.375rem;
+}
+
+.meeting-with-guide input {
+  padding: 0.375rem; 
+  margin-bottom: 0.75rem;
+  border-radius: 0.625rem;
+}
+
+.meeting-with-guide button {
+  background-color: #ff9933;
+  color: #fff;
+  padding: 0.5rem 0.75rem; 
+  font-size: 0.875rem; 
+  border: none;
+  border-radius: 0.313rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.meeting-with-guide button:disabled {
+  background-color: #d3d3d3;
+  cursor: not-allowed;
+}
+
+.meeting-with-guide button:hover{
+  background-color: #138808;
+  border-radius: 1.25rem;
+}
+
+/* .meeting-with-guide button:active {
+  transform: scale(0.95);
+} */

@@ -1,0 +1,125 @@
+DragAndDrop.css
+
+/* FileUpload.css */
+
+.dropzone {
+    border: 2px dashed #cccccc;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  body{
+    background-color: #F5F5F5;
+  }
+  .active {
+    background-color: #f9f9f9;
+  }
+  
+
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adjust values as needed */
+    border-radius: 5px;
+    width: 90%;
+    margin: auto;
+    transition: box-shadow 0.3s ease-in;
+
+  }
+  .flex-container:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Adjust values for hover effect */
+    transition: box-shadow 0.3s ease-in;
+  }
+
+  .full-width-column {
+    flex-basis: calc(100% - 20px); /* Adjust the margin as needed */
+    padding: 15px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .column {
+    flex-basis: calc(20% - 20px); /* Adjust the width and margin as needed */
+    /* Adjust the width and margin as needed */
+    padding: 7px;
+    gap: 10px;
+    /* height: 50px; */
+    /* border: 1px solid #ccc; */
+    text-align: left;
+
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+  }
+
+.header{
+  color: #B9C7E7;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.group{
+  width: 75%;
+  margin: 10px auto; 
+}
+.heading{
+  text-align: center;
+}
+.input{
+    width: 100%;
+    border: none;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 7px;
+}
+
+#submit-btn{
+  background-color: #C43EF3;
+}
+
+.download-btn{
+  background-color: transparent;
+  border: none;
+  padding: 8px;
+  background-color: #E7E6FB;
+  margin: -8px -8px;
+  font-weight: 600;
+  color: #6151FB;
+  transition: all 0.3s ease-in;
+  border-radius: 5px;
+
+
+}
+
+.download-btn:hover{
+  background-color: #6151FB;
+  color: #ffff;
+  transition: all 0.3s ease-in;
+}
+
+
+.download-img{
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+.mb-3 img{
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
+
+}
+
+.username{
+  margin-bottom: 5px;
+}

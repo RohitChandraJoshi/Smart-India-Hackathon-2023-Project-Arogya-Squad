@@ -1,0 +1,59 @@
+
+footer {
+    background-color: #1388086b;
+    padding: 0.625rem;
+    margin-bottom: 0.313rem;
+    color: #333; 
+    width: 100%;
+  }
+  .contact-heading {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0.313rem;
+    justify-content: space-between;
+  }
+  
+  .contact-heading h3 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+  }
+  
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-icon {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.625rem;
+  }
+  
+  .contact-icon i {
+    margin-right: 0.625rem;
+  }
+  
+  .socials {
+    margin-top: 1.25rem;
+  }
+  
+  .socials a {
+    margin-right: 0.625rem;
+    text-decoration: none;
+    color: #333; /* Adjust icon color as needed */
+  }
+
+  .sharda-logo img{
+    max-width: 18.75rem;
+    max-height: auto;
+  }
+
+  .sih-logo img{
+    max-width: 9.375rem ;
+    max-height: auto;
+  }
+  
+  .fa-solid, .fa-brands {
+    font-family: 'Font Awesome 5 Free'; 
+  }
+  

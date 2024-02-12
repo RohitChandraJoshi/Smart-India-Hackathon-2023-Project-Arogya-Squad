@@ -1,0 +1,211 @@
+
+body.modalopen {
+    overflow: hidden;
+  }
+  
+  .appContainer {
+    width: 700px;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(225, 150, 10, 0.1);
+    border: 2px solid #009245; 
+    z-index: 1;
+  }
+  
+  .appHeader {
+    text-align: center;
+    font-size: 30px;
+    color: #333;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
+   
+    transition: color 0.3s, text-shadow 0.3s;
+  }
+  .container h2 {
+    font-weight: bold;
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #e8e8e8;
+    -webkit-background-clip: text;
+    
+    filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.5));
+    transition: filter 0.3s ease-in-out;
+  }
+  
+  .container h2:hover {
+    filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.8));
+  }
+  .container h3{
+    text-align: center;
+    margin-right: 15px;
+    font-size: 25px;
+    color: #1e0323;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
+   
+    transition: color 0.3s, text-shadow 0.3s;
+  }
+  .formGroup {
+    margin-bottom: 25px;
+  }
+  
+  .formControl {
+    width: 90%;
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid #00000046; 
+    border-radius: 4px;
+    transition: border-color 0.3s; 
+  }
+  
+  .formControlSelect {
+    width: 100%;
+  }
+  .formControl:hover {
+    border-color: #009245; 
+  }
+  .compareBtnContainer {
+    text-align: center;
+    margin-top: 20px; 
+  }
+  
+  .compareBtn {
+    text-align: center;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 17px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s; 
+  }
+  
+  .compareBtn:hover {
+    background-color: #0056b3;
+  }
+  
+  .resultText {
+    font-weight: bold;
+    font-size: 18px;
+    color: #333;
+    margin-top: 10px;
+  }
+  
+  .customModal {
+    border: 2px solid #009245;
+    max-width: 6000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2; 
+    backdrop-filter: blur(5px); 
+  }
+  .backgroundBox {
+    background: linear-gradient(to right, #009245, #FCEE21); /* Updated gradient background */
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(225, 150, 10, 0.1);
+    position: relative;
+  }
+  
+  
+
+  
+  .customOverlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; 
+  }
+  .customModal h2{
+    color: red;
+    text-align: center;
+  }
+  .customModal p {
+    font-size: 17px; 
+  }
+  
+  .customModal ul {
+    font-size: 17px; 
+  }
+  
+  .customModal li {
+    font-size: 17px; 
+  }
+  .close-btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px 24px; 
+    font-size: 18px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .close-btn:hover {
+    background-color: #0056b3;
+  }
+  @media (max-width: 600px) {
+    .appContainer {
+      width: 90%;
+      padding: 10px;
+    }
+    .container h1 {
+      font-size: 2em; /* Further adjust font size for smaller screens if needed */
+    }
+  
+    .container h2 {
+      font-size: 18px; /* Further adjust font size for smaller screens if needed */
+    }
+    .appHeader {
+      font-size: 24px;
+    }
+  
+    .formControl {
+      width: 90%;
+    }
+  
+    .compareBtn {
+      padding: 8px 16px;
+      font-size: 16px;
+    }
+  
+    .resultText {
+      font-size: 16px;
+    }
+  
+    .customModal {
+      max-width: 100%;
+      padding: 10px;
+    }
+  
+    .customModal h2 {
+      font-size: 20px;
+    }
+  
+    .customModal p,
+    .customModal ul,
+    .customModal li {
+      font-size: 14px;
+    }
+  
+    .close-btn {
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+  }

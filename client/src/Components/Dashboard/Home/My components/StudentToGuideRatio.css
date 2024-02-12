@@ -1,0 +1,161 @@
+.dashboard {
+  /* display: flex;
+  flex-direction: column;
+  align-items: left; */
+  margin: 38px;
+  /* border: 2px solid black; */
+}
+
+h2{
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+
+.statistics {
+  display: flex ;
+  flex-direction: row;
+  gap: 25px;
+ margin: 30px;
+ justify-content: center;
+ margin-top: 30px;
+ margin-bottom: 40px;
+}
+
+.stat {
+  /* background: linear-gradient(45deg, rgb(255, 153, 0), rgba(2, 250, 2, 0.692)); */
+  background: linear-gradient(to bottom, #ff9933, #ffffff, #138808);
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+  width: 200px;
+  transition: transform .2s;
+}
+
+.stat:hover{
+  transition: transform .2s;
+}
+
+.chart-container {
+  padding: 30px;
+  max-width: 200px; 
+  text-align: center;
+  /* border: 2px solid black; */
+}
+
+.chart-container canvas {
+  /* background-color: ; */
+  max-width: 100%;
+  max-height: auto; 
+}
+
+.rounded-rectangle {
+  /* background: linear-gradient(45deg, rgb(255, 153, 0), rgba(2, 250, 2, 0.692)); */
+  background: linear-gradient(to bottom, #ff9933, #ffffff, #138808);
+  border-radius: 10px;
+  /* padding: 10px; */
+  text-align: center;
+  height: 140px;
+  transition: transform .2s;
+}
+
+.dash{
+  display: flex;
+  gap: 50px ;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.topic-container {
+  display: flex;
+  justify-content: space-around; /* Align items with equal space between */
+  align-items: center; /* Center items vertically */
+  margin-right: 20px;
+}
+
+.topic-item {
+  text-align: center;
+}
+.try-button {
+  color: black;
+}
+.topic-item img {
+  max-width: 150px;
+  max-height: 250px;
+}
+
+.topic-item button {
+  margin-top: 10px; /* Adjust margin as needed */
+}
+
+.rounded-rectangle img{
+  margin-top: 15px;
+  max-width: 50px;
+  max-height: auto;
+  margin-bottom: 10px;
+}
+
+rounded-rectangle:hover{
+  transition: transform .2s;
+}
+
+.statistics .stat:hover .rounded-rectangle {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.statistics .stat:hover h3,
+.statistics .stat:hover p,
+.statistics .stat:hover img {
+  transform: scale(1.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.statistics .stat .rounded-rectangle {
+  position: relative;
+  overflow: hidden;
+}
+
+button {
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: black;
+  background-color: #ff9933;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  transition: border 0.3s, transform 0.3s;
+  cursor: pointer;
+}
+
+button:hover {
+  border-color: #ff993394;
+  background-color: #ff993394;
+  transform: scale(1.1);
+}
+
+button:active {
+  border-color: #13880891;
+  background-color: #13880891;
+  transform: scale(0.9);
+}
+
+.rounded-rectangle:active {
+  transform: scale(0.9);
+  transition: transform 0.2s;
+}
+
+.ayush-logo{
+  display: flex;
+  justify-content: space-between;
+}
+
+.ayush-logo img{
+  max-width: 100px;
+  max-height: auto;
+}
+
+h4{
+  margin-bottom: 10px;
+}

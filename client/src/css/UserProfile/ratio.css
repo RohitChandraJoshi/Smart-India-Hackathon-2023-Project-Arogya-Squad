@@ -1,0 +1,53 @@
+/* StudentGuideRatioPage.css */
+
+.student-guide-ratio-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+  }
+  .student-guide-ratio-page headerx{
+    background: linear-gradient(to right, #009245, #FCEE21);
+  }
+  .headerx {
+    padding: 20px; /* Add padding to increase height */
+    background: linear-gradient(to right, #009245, #FCEE21); /* Apply linear gradient as background */
+    color: white; /* Set text color to white */
+    text-align: center; /* Center-align the text */
+    top: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow for depth */
+    position: absolute; /* Set position to absolute */
+    left: 0; /* Align to the left edge of the screen */
+    right: 0; /* Align to the right edge of the screen */
+  }
+  
+  .student-guide-ratio-page .headerx h2 {
+    font-weight: bold;
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #e8e8e8;
+    -webkit-background-clip: text;
+    filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.5));
+    transition: filter 0.3s ease-in-out;
+  }
+  
+  .student-guide-ratio-page .headerx h2:hover {
+    filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.8));
+  }
+  
+  .chart-container {
+    height: 400px;
+    width: 650px;
+    margin: auto;
+    margin-top: 10%;
+    
+  }
+  
+  .student-guide-ratio-page p {
+    color: #333;
+    font-size: 1.2em;
+  }
+  

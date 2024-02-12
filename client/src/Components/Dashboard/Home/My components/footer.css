@@ -1,0 +1,61 @@
+
+footer {
+    position: absolute;
+    background-color: #1388086b;
+    padding: 10px;
+    margin: 20px 0 0;
+    color: #333; 
+    width: 100%;
+  }
+  .contact-heading {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5px;
+    justify-content: space-between;
+  }
+  
+  .contact-heading h3 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+  }
+  
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-icon {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .contact-icon i {
+    margin-right: 10px;
+  }
+  
+  .socials {
+    margin-top: 20px;
+  }
+  
+  .socials a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #333; /* Adjust icon color as needed */
+  }
+
+  .sharda-logo img{
+    max-width: 200px;
+    max-height: auto;
+  }
+
+  .sih-logo img{
+    max-width: 100px ;
+    max-height: auto;
+  }
+  
+  /* Optional: Style the font-awesome icons */
+  .fa-solid, .fa-brands {
+    font-family: 'Font Awesome 5 Free'; /* Make sure you have the Font Awesome styles loaded */
+  }
+  

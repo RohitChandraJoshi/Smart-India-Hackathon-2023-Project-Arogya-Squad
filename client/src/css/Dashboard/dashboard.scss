@@ -1,0 +1,94 @@
+$text-color: #526d82;
+$post-bg-color: #f5f5f5;
+
+//Main Dashboard
+body {
+  background-color: white;
+
+  .posts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px auto;
+    gap: 20px;
+    flex-direction: column;
+    width: 50%;
+    .post-title {
+      width: 100%;
+      margin: auto;
+      text-align: center;
+    }
+  }
+}
+//Common
+.feed {
+  padding: 4px 10px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  width: 100%;
+  color: $text-color;
+  margin: 0 0 10px;
+}
+
+//Profile
+.profile {
+  .profile-body {
+    margin-top: 50px;
+    .profile-heading {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+    .profile-info {
+      .accordion-details {
+        position: relative;
+        p {
+          display: inline-block;
+        }
+        .delete {
+          display: inline-block;
+          position: absolute;
+          right: 15px;
+          bottom: 11px;
+          cursor: pointer;
+        }
+      }
+      .connections {
+        border: 2px solid black;
+        box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.01);
+        margin: 10px 0;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+        padding: 10px;
+        &:hover {
+          background-color: seashell;
+          transition: all 0.3s ease;
+        }
+      }
+    }
+  }
+}
+
+.project-form {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 20px;
+  gap: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adjust values as needed */
+
+  #guide {
+    padding: 10px !important;
+  }
+  button {
+    width: 30%;
+    background-color: #4c00b4;
+    color: #fff;
+    &:hover {
+      background-color: #4c00b4;
+    }
+  }
+}

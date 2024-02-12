@@ -1,0 +1,65 @@
+.task-manager {
+    border: 0.063rem solid #ccc;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1);
+  }
+  
+  .task-manager h2 {
+    color: #333;
+  }
+  
+  .task-manager form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .task-manager label {
+    margin-bottom: 0.5rem;
+  }
+  
+  .task-manager input {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .task-manager button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.625rem 1rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+  }
+  
+  .task-manager .task-list {
+    margin-top: 1rem;
+  }
+  
+  .task-manager h3 {
+    color: #333;
+  }
+  
+  .task-manager ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .task-manager li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+  
+  .task-manager li button {
+    background-color: #dc3545;
+    color: #fff;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+  }
+  

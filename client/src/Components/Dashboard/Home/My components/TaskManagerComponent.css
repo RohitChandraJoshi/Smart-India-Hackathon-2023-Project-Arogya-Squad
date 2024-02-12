@@ -1,0 +1,67 @@
+/* TaskManagerComponent.css */
+
+.task-manager {
+    border: 1px solid #ccc;
+    padding: 16px;
+    margin: 16px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .task-manager h2 {
+    color: #333;
+  }
+  
+  .task-manager form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .task-manager label {
+    margin-bottom: 8px;
+  }
+  
+  .task-manager input {
+    padding: 8px;
+    margin-bottom: 16px;
+  }
+  
+  .task-manager button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .task-manager .task-list {
+    margin-top: 16px;
+  }
+  
+  .task-manager h3 {
+    color: #333;
+  }
+  
+  .task-manager ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .task-manager li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+  
+  .task-manager li button {
+    background-color: #dc3545;
+    color: #fff;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  

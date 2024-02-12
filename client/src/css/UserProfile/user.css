@@ -1,0 +1,148 @@
+body .searched-user {
+  cursor: pointer;
+  border: 2px solid black;
+  transition: all 0.3s ease;
+  margin: 10px auto;
+  width: 30%;
+}
+body .searched-user:hover {
+  background-color: aliceblue;
+  transition: all 0.3s ease;
+}
+
+.leaderboard {
+  margin: auto;
+  padding: 1rem 2rem;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.1);
+  width: 70%;
+  position: relative;
+  font-size: 1rem;
+}
+
+.leaderboard .full-width {
+  flex-basis: 100%; /* Adjust the margin as needed */
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+}
+
+.flex-item {
+  flex-basis: 20%; /* Adjust the width and margin as needed */
+  /* Adjust the width and margin as needed */
+  padding: 5px;
+  /* height: 50px; */
+  /* border: 1px solid #ccc; */
+  text-align: left;
+  box-sizing: border-box;
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+
+.App_ {
+  text-align: center;
+ 
+}
+.App_ .topicheader {
+  background: linear-gradient(to right, #009245, #FCEE21); 
+  color: #fff;
+  padding: 10px;
+ 
+}
+.App_ .header_text {
+  margin: 0;
+}
+/* .App_ .text_active {
+  color: #000000;
+} */
+.App_ .header_summary {
+  margin-top: 5px;
+}
+.App_ .container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+  width: 100%;
+  gap: 50px;
+}
+.App_ .text_form {
+  text-align: left;
+}
+.App_ form {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+}
+.App_ label {
+  margin-top: 10px;
+}
+
+.App_ input {
+  padding: 10px;
+  margin-bottom: 15px;
+}
+.App_ button {
+  padding: 10px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.App_ button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+.App_ .summarized_text {
+  text-align: left;
+}
+.App_ textarea {
+  padding: 10px;
+  width: 100%;
+  margin-top: 10px;
+  resize: vertical;
+}
+.App_ .topicheader h1 {
+  font-weight: bold;
+  font-size: 2.5em;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #e8e8e8;
+  -webkit-background-clip: text;
+  filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.5));
+  transition: filter 0.3s ease-in-out;
+}
+
+.App_ .topicheader h1:hover {
+  filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.8));
+}
+
+.App_ .topicheader h2 {
+  text-align: center;
+  margin-right: 15px;
+  font-size: 25px;
+  color: #1e0323;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  transition: color 0.3s, text-shadow 0.3s;
+}
+
+.container h1:hover {
+  filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.8));
+}
+.container h2{
+  text-align: center;
+  margin-right: 15px;
+  font-size: 25px;
+  color: #1e0323;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
+ 
+  transition: color 0.3s, text-shadow 0.3s;
+}

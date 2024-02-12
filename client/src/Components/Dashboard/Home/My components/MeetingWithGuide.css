@@ -1,0 +1,60 @@
+/* MeetingWithGuide.css */
+
+.meeting-with-guide {
+  width: 250px; 
+  padding: 20px; 
+  margin: 30px; 
+  border-radius: 30px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  top: 350px; 
+  right: 10px;
+  background-color: #fff; 
+  margin-top: 160px;
+  text-align: center;
+}
+
+.meeting-with-guide h2 {
+  color: #333;
+}
+
+.meeting-with-guide form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.meeting-with-guide label {
+  margin-bottom: 6px;
+}
+
+.meeting-with-guide input {
+  padding: 6px; 
+  margin-bottom: 12px;
+  border-radius: 10px;
+}
+
+.meeting-with-guide button {
+  background-color: #ff9933;
+  color: #fff;
+  padding: 8px 12px; 
+  font-size: 14px; 
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.meeting-with-guide button:disabled {
+  background-color: #d3d3d3;
+  cursor: not-allowed;
+}
+
+.meeting-with-guide button:hover{
+  background-color: #138808;
+  border-radius: 20px;
+}
+
+/* .meeting-with-guide button:active {
+  transform: scale(0.95);
+} */

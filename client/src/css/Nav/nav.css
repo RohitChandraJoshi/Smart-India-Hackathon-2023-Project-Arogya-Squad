@@ -1,0 +1,36 @@
+#navbar {
+  position: relative;
+  color: white;
+}
+#navbar #nav-child {
+  position: absolute;
+  right: 50px;
+}
+#navbar #nav-child form {
+  display: flex;
+}
+#navbar #nav-child form input {
+  padding: 4px;
+  margin: 0 5px;
+}
+#navbar #nav-child form Button {
+  margin-top: 0 !important;
+  margin-left: 10px;
+}
+#navbar #nav-child .nav-bar-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#navbar #nav-child .nav-bar-icons svg {
+  margin: 0 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+  transform: scale(0.5);
+}
+#navbar #nav-child .nav-bar-icons svg:hover {
+  transform: scale(0.5);
+  transition: all 0.3s ease-in;
+}
+
+

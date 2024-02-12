@@ -1,0 +1,58 @@
+.leaderboard {
+  /* border: 1px solid #ccc; */
+  padding: 1.25rem;
+  margin: 1.25rem;
+  border-radius: 1.25rem;
+  box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1);
+  width: 55rem;
+  z-index: 1;
+  margin-top: 6.25rem;
+  margin-left: 18.75rem;
+}
+
+.leaderboard h2 {
+  color: #333;
+  margin-bottom: 1.25rem;
+}
+
+.leaderboard table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1.25rem;
+}
+
+.leaderboard th,
+.leaderboard td {
+  /* border: 1px solid #ddd; */
+  padding: 0.625rem;
+  text-align: center;
+}
+
+.leaderboard th {
+  /* background-color: #007bff; */
+  color: #000000;
+  text-align: center;
+  border-bottom: 0.063rem solid #ddd;
+}
+
+.leaderboard a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.leaderboard a:hover {
+  text-decoration: underline;
+}
+
+.leaderboard tbody {
+  padding: 0.5rem;
+}
+
+button{
+  background-color: #13880894;
+}
+
+button:hover{
+  background-color: #138808;
+  /* border-radius: 20px; */
+}
