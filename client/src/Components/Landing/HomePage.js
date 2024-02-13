@@ -6,7 +6,7 @@ import Footer from "../Common/Footer";
 import Popup from "./popup"; // Import your Popup component
 import LogoLeft from "G:/Projects/SIH 2023/SIH1341_16581_Arogya_Squad/SIH1341_16581_Arogya_Squad/client/src/Components/Dashboard/Home/Assets/ministryofayushlogo.jpg"; // Import your left logo
 import LogoRight from "G:/Projects/SIH 2023/SIH1341_16581_Arogya_Squad/SIH1341_16581_Arogya_Squad/client/src/Components/Dashboard/Home/Assets/sihlogo.jpg"; // Import your right logo
-
+import "G:/Projects/SIH 2023/SIH1341_16581_Arogya_Squad/SIH1341_16581_Arogya_Squad/client/src/css/home.css"
 function WelcomeText() {
   return (
     <div
@@ -26,7 +26,7 @@ function WelcomeText() {
       <div style={{ border: "2px solid black", padding: "5px" }}>
         <img src={LogoLeft} alt="Left Logo" style={{ height: "70px" }} />
       </div>
-      <h1 style={{ fontSize: "30px", fontWeight: "500", textTransform: "uppercase", color: "white" }}>
+      <h1 style={{color: "white" }}>
         <span style={{ backgroundColor: "#c50000", borderRadius: "0.25rem", display: "inline-block", height: "0.25rem", width: "42px", marginBottom: "1.25rem" }}></span>
         Welcome to Smart University Portal
       </h1>

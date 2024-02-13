@@ -33,4 +33,53 @@
   transition: all 0.3s ease-in;
 }
 
+@media screen and (max-width: 600px) {
+  /* Common */
+  .feed {
+    gap: 5px; /* Reduce gap */
+  }
 
+  /* Profile */
+  .profile .profile-body {
+    margin-top: 20px; /* Adjust margin */
+  }
+
+  .profile .profile-body .profile-heading {
+    gap: 5px; /* Reduce gap */
+  }
+
+  .project-form {
+    padding: 8px; /* Adjust padding */
+  }
+
+  /* Sidebar */
+  .sidebar {
+    width: 60px; /* Reduce width */
+  }
+
+  .sidebar li {
+    padding: 5px;
+  }
+
+  .sidebar a {
+    font-size: 12px; /* Adjust font size */
+  }
+
+  /* Navbar */
+  #navbar #nav-child {
+    right: 10px; /* Adjust position */
+  }
+
+  #navbar #nav-child form input {
+    padding: 3px;
+    margin: 3px 0; /* Adjust margin */
+  }
+
+  #navbar #nav-child form Button {
+    margin-top: 3px !important; /* Adjust top margin */
+  }
+
+  #navbar #nav-child .nav-bar-icons svg {
+    margin: 0 3px; /* Reduce margin */
+  }
+}

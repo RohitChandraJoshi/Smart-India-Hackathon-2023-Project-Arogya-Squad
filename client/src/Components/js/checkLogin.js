@@ -6,7 +6,7 @@ export async function checkLogin() {
         tokenKey: localStorage.getItem("token"),
       },
     };
-    const response = await fetch("http://localhost:8000/dashboard", options);
+    const response = await fetch("https://pg-dissertation-management-system.onrender.com/dashboard", options);
     if ((await response.json()).message == "succesfull") return true;
     else {
       return false;

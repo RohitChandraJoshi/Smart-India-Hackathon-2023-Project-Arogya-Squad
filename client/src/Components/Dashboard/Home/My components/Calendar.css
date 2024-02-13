@@ -70,3 +70,8 @@ button:hover{
   justify-content: center;
   margin-top: 30px;
 }
+@media only screen and (max-width: 600px) {
+  .calendar-container {
+    display: none;
+  }
+}

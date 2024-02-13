@@ -33,3 +33,24 @@
     }
   }
 }
+@media screen and (max-width: 600px) {
+  /* Navbar */
+  #navbar #nav-child {
+    right: 10px; /* Adjust position */
+  }
+
+  #navbar #nav-child form input {
+    padding: 3px;
+    margin: 3px 0; /* Adjust margin */
+  }
+
+  #navbar #nav-child form Button {
+    margin-top: 3px !important; /* Adjust top margin */
+    margin-left: 5px; /* Adjust left margin */
+  }
+
+  #navbar #nav-child .nav-bar-icons svg {
+    margin: 0 3px; /* Reduce margin */
+    transform: scale(0.8); /* Adjust size */
+  }
+}

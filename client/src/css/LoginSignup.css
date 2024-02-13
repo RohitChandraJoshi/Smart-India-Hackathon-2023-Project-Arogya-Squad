@@ -37,7 +37,7 @@
   border-radius: 7px; /* Increased border-radius */
 }
 .auth-container .inputs {
-  margin-top: 15px; /* Increased margin-top */
+  margin-top: 1px; /* Increased margin-top */
   display: flex;
   flex-direction: column; /* Added flex-direction: column */
   gap: 10px; /* Added gap between input containers */
@@ -51,7 +51,7 @@
   height: 65px; /* Increased height */
   background: #eaeaea;
   border-radius: 7px; /* Increased border-radius */
-  margin-bottom: 20px; /* Added margin-bottom */
+  margin-bottom: 10px; /* Added margin-bottom */
 }
 .auth-container .input img {
   margin: 0px 18px; /* Increased margin */
@@ -114,4 +114,71 @@
 
 .auth-container .auth-btn:hover {
   background-color: #4c00b4;
+}
+@media only screen and (max-width: 600px) {
+  .auth-container {
+    width: 90%; /* Adjusted width */
+    padding: 20px; /* Adjusted padding */
+    border-radius: 15px; /* Adjusted border-radius */
+    margin: 20px auto; /* Adjusted margin */
+  }
+
+  .auth-container img {
+    padding: 12px; /* Adjusted padding */
+  }
+
+  .auth-container .header {
+    width: 100%; /* Adjusted width */
+    margin-top: 20px; /* Adjusted margin-top */
+  }
+
+  .auth-container .text {
+    font-size: 30px; /* Adjusted font-size */
+  }
+
+  .auth-container .underline {
+    width: 40px; /* Adjusted width */
+    height: 4px; /* Adjusted height */
+    border-radius: 5px; /* Adjusted border-radius */
+  }
+
+  .auth-container .inputs {
+    margin-top: 10px; /* Adjusted margin-top */
+  }
+
+  .auth-container .input {
+    width: 100%; /* Adjusted width */
+    height: 50px; /* Adjusted height */
+    margin-bottom: 15px; /* Adjusted margin-bottom */
+  }
+
+  .auth-container .input img {
+    margin: 0px 12px; /* Adjusted margin */
+  }
+
+  .auth-container .input input {
+    width: 280px; /* Adjusted width */
+    font-size: 16px; /* Adjusted font-size */
+  }
+
+  .auth-container .forgot-password {
+    padding-left: 40px; /* Adjusted padding-left */
+    margin-top: 15px; /* Adjusted margin-top */
+    font-size: 16px; /* Adjusted font-size */
+  }
+
+  .auth-container .submit-container {
+   
+    gap: 15px; /* Adjusted gap */
+    margin: 30px auto; /* Adjusted margin */
+    width: 230px; /* Increased width */
+    height: 50px;
+  }
+
+  .auth-container .submit {
+    width: 100%; /* Adjusted width */
+    height: 45px; /* Adjusted height */
+    font-size: 16px; /* Adjusted font-size */
+    border-radius: 15px; /* Adjusted border-radius */
+  }
 }

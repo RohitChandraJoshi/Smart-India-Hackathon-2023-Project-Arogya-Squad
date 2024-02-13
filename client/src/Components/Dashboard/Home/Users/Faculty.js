@@ -17,7 +17,7 @@ export default function Faculty() {
       }),
     };
     const response = await fetch(
-      "http://localhost:8000/approve/project",
+      "https://pg-dissertation-management-system.onrender.com/approve/project",
       options
     );
     const data = await response.json();
@@ -29,7 +29,7 @@ export default function Faculty() {
     (async () => {
       const guideId = localStorage.getItem("id");
       const response = await fetch(
-        `http://localhost:8000/get/guide/projects/${guideId}`
+        `https://pg-dissertation-management-system.onrender.com/get/guide/projects/${guideId}`
       );
       const data = await response.json();
       console.log(data);

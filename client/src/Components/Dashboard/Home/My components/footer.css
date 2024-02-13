@@ -1,6 +1,6 @@
 
 footer {
-    position: absolute;
+    position: relative;
     background-color: #1388086b;
     padding: 10px;
     margin: 20px 0 0;
@@ -58,4 +58,36 @@ footer {
   .fa-solid, .fa-brands {
     font-family: 'Font Awesome 5 Free'; /* Make sure you have the Font Awesome styles loaded */
   }
+  @media only screen and (max-width: 600px) {
+    .footer {
+      width: 100%;
+      position: static;
+      padding: 20px;
+    }
   
+    .contact-heading {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .contact-heading h3 {
+      font-size: 1em;
+      margin-bottom: 0.3em;
+    }
+  
+    .socials {
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+    }
+    
+  .sharda-logo img{
+    max-width: 50px;
+    max-height: auto;
+  }
+
+  .sih-logo img{
+    max-width: 40px ;
+    max-height: auto;
+  }
+  }

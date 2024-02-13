@@ -5,7 +5,7 @@ export default function Summary({ grade, projectCompleted }) {
   useEffect(() => {
     (async () => {
       const response = await fetch(
-        `http://localhost:8000/getProject/${localStorage.getItem("id")}`
+        `https://pg-dissertation-management-system.onrender.com/getProject/${localStorage.getItem("id")}`
       );
       const data = await response.json();
       if (data.published) updatePublishedPaper("Yes");

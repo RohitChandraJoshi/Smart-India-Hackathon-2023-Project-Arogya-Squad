@@ -49,7 +49,7 @@ export default function SubmitFile() {
       console.log(formDataObject);
       // Replace 'http://localhost:3000' with your server URL
       const response = await axios.post(
-        `http://localhost:8000/upload/${localStorage.getItem("id")}`,
+        `https://pg-dissertation-management-system.onrender.com/upload/${localStorage.getItem("id")}`,
         formDataObject
       );
       const message = response.data.message;

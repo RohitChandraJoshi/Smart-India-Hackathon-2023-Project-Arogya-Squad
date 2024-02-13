@@ -1,86 +1,76 @@
 import React, { useState } from "react";
 import "../../../css/UserProfile/user.css";
-import { Configuration, OpenAIApi } from "openai";
-import { isAlphaOnly } from "../../js/isAlpha";
+import { Configuration, OpenAIApi } from "openai"; // Updated import statement
+
 export default function TopicRecommendation() {
-  const [text, setText] = useState("");
   const [areaOfInterest, setAreaOfInterest] = useState("");
   const [specilization, setspecilization] = useState("");
   const [keywords, setKeywords] = useState("");
-  const [summarizedtext, setSummarizedtext] = useState("");
+  const [summarizedText, setSummarizedText] = useState("");
   const [loading, setLoading] = useState(false);
-  const configuration = new Configuration({
-    apiKey: "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",
-  });
-
-  const openai = new OpenAIApi(configuration);
 
   const handleSubmit = (e) => {
-    console.log(process.env);
     setLoading(true);
     e.preventDefault();
-    if (
-      !isValidInput(areaOfInterest) ||
-      !isValidInput(keywords) ||
-      !isValidInput(specilization)
-    ) {
-      alert("please enter values for area of Interest and keywords");
+
+    if (!isValidInput(areaOfInterest) || !isValidInput(keywords) || !isValidInput(specilization)) {
+      alert("Please enter values for area of interest, specialization, and keywords.");
       setLoading(false);
       return;
     }
-    if (!isNaN(areaOfInterest) || !isNaN(keywords)) {
-      alert("Please enter alphabets for keywords and area of interest");
+
+    if (!isAlphaOnly(areaOfInterest) || !isAlphaOnly(specilization) || !isAlphaOnly(keywords)) {
+      alert("Please enter alphabets only for area of interest, specialization, and keywords.");
       setLoading(false);
       return;
     }
 
     const prompt = generatePrompt(areaOfInterest, specilization, keywords);
-    console.log(prompt);
-    openai
-      .createCompletion({
-        model: "text-davinci-003",
-        prompt: prompt,
-        temperature: 0.6,
-        max_tokens: 100,
-      })
-      .then((res) => {
-        if (res.status === 200) {
-          setLoading(false);
-          setSummarizedtext(res?.data?.choices[0]?.text);
-        }
-      })
-      .catch((err) => {
-        console.log(err, "An error occurred");
-      });
+
+    const configuration = new Configuration({
+      apiKey: process.env.REACT_APP_OPENAI_KEY,
+    });
+    const openai = new OpenAIApi(configuration);
+
+    openai.createCompletion({
+      model: "gpt-3.5-turbo-instruct",
+      prompt: prompt,
+      temperature: 0.6,
+      max_tokens: 100,
+    })
+    .then((res) => {
+      if (res.status === 200) {
+        setLoading(false);
+        setSummarizedText(res?.data?.choices[0]?.text);
+      }
+    })
+    .catch((err) => {
+      console.error("An error occurred:", err);
+    });
   };
 
-  const isValidInput = (input, fieldName) => {
-    const isValid = typeof input === "string" && input.trim() !== "";
-    if (!isValid) {
-      console.error(
-        `${fieldName} is invalid. Type: ${typeof input}, Value: "${input}"`
-      );
-    }
-    return isValid;
+  const isValidInput = (input) => {
+    return typeof input === "string" && input.trim() !== "";
   };
 
-  const generatePrompt = (areaOfInterest, specilization, keywords) => {
-    return `recomend 5 research topics for area of interest : ${areaOfInterest}\n ${specilization} and \nKeywords: ${keywords}\n`;
+  const isAlphaOnly = (input) => {
+    const regex = /^[a-zA-Z\s,]+$/;
+    return regex.test(input);
+  };
+
+  const generatePrompt = (areaOfInterest, specialization, keywords) => {
+    return `Recommend 5 research topics for Area of Interest: ${areaOfInterest}, Specialization: ${specialization}, Keywords: ${keywords}`;
   };
 
   return (
     <div className="App_">
       <div className="topicheader">
-        <h1 >
-          Topic Recommender
-        </h1>
-        <h2  >
-          Get Recommended Topic for your Research work using AI.
-        </h2>
+        <h1>Topic Recommender</h1>
+        <h2>Get Recommended Topics for Your Research Work using AI</h2>
       </div>
       <div className="container">
         <div className="text_form">
-          <form>
+          <form onSubmit={handleSubmit}>
             <label>Area of Interest</label>
             <input
               type="text"
@@ -88,10 +78,10 @@ export default function TopicRecommendation() {
               value={areaOfInterest}
               onChange={(e) => setAreaOfInterest(e.target.value)}
             />
-            <label>specilization</label>
+            <label>Specialization</label>
             <input
               type="text"
-              placeholder="Enter your Specilization"
+              placeholder="Enter your specialization"
               value={specilization}
               onChange={(e) => setspecilization(e.target.value)}
             />
@@ -103,8 +93,8 @@ export default function TopicRecommendation() {
               onChange={(e) => setKeywords(e.target.value)}
             />
             <div>
-              <button type="button" onClick={handleSubmit}>
-                {loading ? "Loading..." : "Topics"}
+              <button type="submit" disabled={loading}>
+                {loading ? "Loading..." : "Recommend Topics"}
               </button>
             </div>
           </form>
@@ -115,8 +105,8 @@ export default function TopicRecommendation() {
             placeholder="Topics"
             cols={80}
             rows={14}
-            value={summarizedtext}
-            onChange={(e) => setText(e.target.value)}
+            value={summarizedText}
+            readOnly
           />
         </div>
       </div>

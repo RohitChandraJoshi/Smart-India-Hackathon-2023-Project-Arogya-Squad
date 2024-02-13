@@ -23,7 +23,7 @@ function NavBar() {
         "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8",
       },
     };
-    const getToken = await fetch("http://localhost:8000/auth/login", options);
+    const getToken = await fetch("https://pg-dissertation-management-system.onrender.com/auth/login", options);
     const data = await getToken.json();
     console.log(data);
     if (data.token) {

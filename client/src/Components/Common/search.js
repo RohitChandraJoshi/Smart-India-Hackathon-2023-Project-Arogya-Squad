@@ -12,7 +12,7 @@ export default function Search() {
       return;
     }
     setState(true);
-    const response = await search(`http://localhost:8000/search/user/${value}`);
+    const response = await search(`https://pg-dissertation-management-system.onrender.com/search/user/${value}`);
     setState(false);
     console.log(response);
     changeData(response);

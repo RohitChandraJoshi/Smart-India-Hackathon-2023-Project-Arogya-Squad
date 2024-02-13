@@ -34,9 +34,18 @@ function Popup() {
             Test Email and Password
           </Typography>
           <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-            Email: test@gmail.com
+          for student -
             <br />
-            Password: Test67@76
+            Email: teststudent@gmail.com
+            <br />
+            Password: Teststudent67@76
+            <br />
+            <br />
+            for guide -
+            <br />
+            Email: testguide@gmail.com
+            <br />
+            Password: Testguide56@65
           </Typography>
           <Button onClick={handleClose}>Close</Button>
         </Box>

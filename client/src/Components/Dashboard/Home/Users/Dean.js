@@ -9,7 +9,7 @@ export default function Dean() {
   useEffect(() => {
     (async () => {
       const response = await fetch(
-        "http://localhost:8000/get/approval/projects"
+        "https://pg-dissertation-management-system.onrender.com/get/approval/projects"
       );
       const data = await response.json();
       if (data.result) updateStudents(data.result);
@@ -27,7 +27,7 @@ export default function Dean() {
       }),
     };
     const response = await fetch(
-      "http://localhost:8000/approve/projects",
+      "https://pg-dissertation-management-system.onrender.com/approve/projects",
       options
     );
     const data = await response.json();

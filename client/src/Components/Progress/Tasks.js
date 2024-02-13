@@ -29,7 +29,7 @@ export default function Tasks({ tasks }) {
       body: new URLSearchParams({ grade, taskId }),
     };
     (async () => {
-      const response = await fetch(`http://localhost:8000/updateTask`, options);
+      const response = await fetch(`https://pg-dissertation-management-system.onrender.com/updateTask`, options);
       const data = await response.json();
       console.log(data.result);
       if (data.result) {
@@ -57,7 +57,7 @@ export default function Tasks({ tasks }) {
         method: "DELETE",
         body: new URLSearchParams({ task }),
       };
-      const response = await fetch("http://localhost:8000/deleteTask", options);
+      const response = await fetch("https://pg-dissertation-management-system.onrender.com/deleteTask", options);
       const data = await response.json();
 
       if (data.message) window.location.href = "/dashboard/progress";

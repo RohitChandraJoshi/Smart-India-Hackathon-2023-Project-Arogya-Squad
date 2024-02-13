@@ -107,3 +107,20 @@
     background-color: #4c00b4;
   }
 }
+@media only screen and (max-width: 768px) {
+  .auth-container {
+    width: 90%; /* Adjusted width for smaller screens */
+  }
+
+  .auth-container .input {
+    width: 90%; /* Adjusted width for smaller screens */
+  }
+
+  .auth-container .input input {
+    width: 80%; /* Adjusted width for smaller screens */
+  }
+
+  .auth-container .submit {
+    width: 80%; /* Adjusted width for smaller screens */
+  }
+}

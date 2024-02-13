@@ -21,7 +21,7 @@ import Guides from 'G:/Projects/SIH 2023/SIH1341_16581_Arogya_Squad/SIH1341_1658
 import MyAppointments from 'G:/Projects/SIH 2023/SIH1341_16581_Arogya_Squad/SIH1341_16581_Arogya_Squad/client/src/Components/meeting/features/myAppointments/MyAppointments.jsx'
 function App() {
   useEffect(() => {
-    fetch("http://localhost:8000/home")
+    fetch("https://pg-dissertation-management-system.onrender.com/home")
       .then((res) => res.json())
       .then((data) => console.log(data.message));
   }, []);

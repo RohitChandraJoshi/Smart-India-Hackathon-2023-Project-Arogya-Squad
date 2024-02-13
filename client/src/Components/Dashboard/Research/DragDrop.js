@@ -19,7 +19,7 @@ const FileUpload = () => {
     // Make a POST request to your backend endpoint
     (async () => {
       const response = await axios.post(
-        `http://localhost:8000/upload/${localStorage.getItem("id")}`,
+        `https://pg-dissertation-management-system.onrender.com/upload/${localStorage.getItem("id")}`,
         formData
       );
       const message = response.data.message;

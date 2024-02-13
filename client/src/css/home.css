@@ -1,0 +1,29 @@
+/* Default styles */
+h1 {
+    font-size: 30px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: white;
+  }
+  
+  h1 span {
+    background-color: #c50000;
+    border-radius: 0.25rem;
+    display: inline-block;
+    height: 0.25rem;
+    width: 42px;
+    margin-bottom: 1.25rem;
+  }
+  
+  /* Media query for mobile */
+  @media only screen and (max-width: 600px) {
+    h1 {
+      font-size: 20px; /* Adjusted font-size for mobile */
+    }
+  
+    h1 span {
+      width: 20px; /* Adjusted width for mobile */
+      margin-bottom: 1rem; /* Adjusted margin-bottom for mobile */
+    }
+  }
+  

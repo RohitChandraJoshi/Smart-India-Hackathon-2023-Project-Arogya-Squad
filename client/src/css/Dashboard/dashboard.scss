@@ -92,3 +92,24 @@ body {
     }
   }
 }
+@media (max-width: 768px) {
+  body {
+    .posts {
+      width: 95%; // Adjust width for smaller screens
+    }
+  }
+
+  .feed {
+    width: 95%; // Adjust width for smaller screens
+  }
+
+  .profile {
+    .profile-body {
+      margin-top: 20px; // Adjust margin for smaller screens
+    }
+  }
+
+  .project-form {
+    width: 90%; // Adjust width for smaller screens
+  }
+}

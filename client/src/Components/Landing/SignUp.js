@@ -43,7 +43,7 @@ function Signup() {
         },
       };
       const response = await fetch(
-        "http://localhost:8000/auth/signup",
+        "https://pg-dissertation-management-system.onrender.com/auth/signup",
         options
       );
       const data = await response.json();
@@ -65,7 +65,7 @@ function Signup() {
           "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8",
         },
       };
-      const response = await fetch("http://localhost:8000/auth/login", options);
+      const response = await fetch("https://pg-dissertation-management-system.onrender.com/auth/login", options);
       const data = await response.json();
       if (data.error) alert(data.error);
       console.log(data);

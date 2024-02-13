@@ -35,7 +35,7 @@ const Post = (props) => {
         body: new URLSearchParams(formDataObject),
       };
       const response = await fetch(
-        `http://localhost:8000/assignTask/${guideId}`,
+        `https://pg-dissertation-management-system.onrender.com/assignTask/${guideId}`,
         options
       );
 

@@ -117,7 +117,7 @@ const StudentBody = () => {
               </NavLink>
             </li>
             <li>
-              <NavLink to="/dashboard/ratio">
+              <NavLink to="/student-guide-ratio">
                 <div className="link">
                   <div className="icon">
                     <img src={PieChartICon} />

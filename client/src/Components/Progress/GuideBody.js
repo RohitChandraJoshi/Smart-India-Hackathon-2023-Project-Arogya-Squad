@@ -22,7 +22,7 @@ export default function GuideBody() {
     (async () => {
       let userId = localStorage.getItem("id");
       console.log(userId);
-      const response = await fetch(`http://localhost:8000/getTasks/${userId}`, {
+      const response = await fetch(`https://pg-dissertation-management-system.onrender.com/getTasks/${userId}`, {
         method: "GET",
       });
       const data = await response.json();

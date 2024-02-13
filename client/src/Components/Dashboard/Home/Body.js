@@ -13,7 +13,7 @@ export default function Body() {
   useEffect(() => {
     (async () => {
       const response = await fetch(
-        `http://localhost:8000/get/user/${localStorage.getItem("id")}`,
+        `https://pg-dissertation-management-system.onrender.com/get/user/${localStorage.getItem("id")}`,
         { method: "GET" }
       );
       const data = await response.json();

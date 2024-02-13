@@ -28,7 +28,7 @@ export default function Student() {
     (async () => {
       // Fetch project details
       const response = await fetch(
-        `http://localhost:8000/getProject/${localStorage.getItem("id")}`
+        `https://pg-dissertation-management-system.onrender.com/getProject/${localStorage.getItem("id")}`
       );
       const data = await response.json();
 
@@ -36,7 +36,7 @@ export default function Student() {
       else updateProject(true);
 
       // Fetch guide options
-      const guideResponse = await fetch(`http://localhost:8000/get/guides`);
+      const guideResponse = await fetch(`https://pg-dissertation-management-system.onrender.com/get/guides`);
       const guideData = await guideResponse.json();
       if (guideData.result) {
         updateOptions(guideData.result);
@@ -44,7 +44,7 @@ export default function Student() {
 
       // Fetch project details for student
       const studentResponse = await fetch(
-        `http://localhost:8000/getProject/${localStorage.getItem("id")}`
+        `https://pg-dissertation-management-system.onrender.com/getProject/${localStorage.getItem("id")}`
       );
       const studentData = await studentResponse.json();
       if (studentData.result) updateStudent(studentData.result);
@@ -90,7 +90,7 @@ export default function Student() {
               "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8",
             },
           };
-          fetch("http://localhost:8000/upload/project/details", options)
+          fetch("https://pg-dissertation-management-system.onrender.com/upload/project/details", options)
             .then((response) => response.json())
             .then((data) => {
               if (data.message) window.location.href = "/dashboard/submit/projects";

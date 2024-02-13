@@ -1,6 +1,6 @@
 const handleDownload = async () => {
     try {
-      const response = await fetch('http://localhost:5000/download');
+      const response = await fetch('https://pg-dissertation-management-system.onrender.com/download');
       const blob = await response.blob();
 
       // Create a temporary link and trigger a click event to initiate the download

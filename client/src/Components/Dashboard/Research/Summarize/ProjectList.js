@@ -17,7 +17,7 @@ export default function ProjectList() {
   useEffect(() => {
     (async () => {
       const response = await fetch(
-        `http://localhost:8000/getProject/${localStorage.getItem("id")}`
+        `https://pg-dissertation-management-system.onrender.com/getProject/${localStorage.getItem("id")}`
       );
       const data = await response.json();
       console.log(data);
@@ -33,7 +33,7 @@ export default function ProjectList() {
   async function handleDownload() {
     try {
       const response = await fetch(
-        `http://localhost:8000/downloadFile/${localStorage.getItem("id")}`
+        `https://pg-dissertation-management-system.onrender.com/downloadFile/${localStorage.getItem("id")}`
       );
       const blob = await response.blob();
       console.log();
