@@ -190,20 +190,20 @@ export default function Student() {
         <div>
           {/* Existing project form */}
           <FormGroup onSubmit={uploadProject} className="project-form">
-            <FormLabel>Enter Project Title</FormLabel>
-            <Input
+            <FormLabel style={{marginLeft: "100px"}}>Enter Project Title</FormLabel>
+            <Input style={{marginLeft: "100px"}}
               onChange={handleTitleChange}
               placeholder="Enter Project Title"
               type="text"
               required="true"
             />
-            <FormLabel>Select a guide</FormLabel>
-            <Select
+            <FormLabel style={{marginLeft: "100px"}} >Select a guide</FormLabel>
+            <Select 
               labelId="demo-simple-select-label"
               id="guide"
               label="Choose a guide"
               placeholder="Choose a role"
-              style={{ width: "100%" }}
+              style={{ width: "100%" ,marginLeft: "100px" }}
               onChange={handleOptionChange}
             >
               {options.map((option) => {
@@ -215,8 +215,8 @@ export default function Student() {
                 );
               })}
             </Select>
-            <Input type="file" name="file" />
-            <Button type="submit" onClick={uploadProject}>
+            <Input style={{marginLeft: "100px"}} type="file" name="file" />
+            <Button style={{marginLeft: "100px"}} type="submit" onClick={uploadProject}>
               {" "}
               Submit{" "}
             </Button>
