@@ -7,6 +7,7 @@ import Form from "react-bootstrap/Form";
 import Button from "@mui/material/Button";
 import SendIcon from "@mui/icons-material/Send";
 import "../../../css/Research.css";
+import Sidebar from "G:/Projects/SIH 2023/SIH1341_16581_Arogya_Squad/SIH1341_16581_Arogya_Squad/client/src/Components/Dashboard/Home/Sidebar.js"
 
 export default function SubmitFile() {
   const [formData, setFormData] = useState({
@@ -67,6 +68,7 @@ export default function SubmitFile() {
 
   return (
     <Container style={{ background: "#F5F5F5", padding: "4% 8%" }} fluid>
+      <Sidebar />
       <Row>
         <Col>
           <div className="submit-file">

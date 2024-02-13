@@ -1,7 +1,7 @@
 import React from 'react';
 import { Pie } from 'react-chartjs-2';
 import 'G:/Projects/SIH 2023/SIH1341_16581_Arogya_Squad/SIH1341_16581_Arogya_Squad/client/src/css/UserProfile/ratio.css'; // Import the CSS file for this component
-
+import Sidebar from "G:/Projects/SIH 2023/SIH1341_16581_Arogya_Squad/SIH1341_16581_Arogya_Squad/client/src/Components/Dashboard/Home/Sidebar.js"
 const StudentGuideRatioPage = () => {
   // Hardcoded student and guide counts
   const students = 1000;
@@ -21,6 +21,7 @@ const StudentGuideRatioPage = () => {
 
   return (
     <div className="student-guide-ratio-page"> {/* Added a class name for the container */}
+    <Sidebar />
       <div className="headerx">
         <h2>Student Guide Ratio Chart</h2>
       </div>

@@ -65,6 +65,10 @@ function App() {
             path="/dashboard/topic"
             element={<Topic />}
           />
+            <Route
+            path="/dashboard/ratio"
+            element={<Topic />}
+          />
           <Route path="/dashboard/submit/project" element={<Student />} />
           <Route path="/dashboard/projects" element={<Faculty />} />
         </Routes>

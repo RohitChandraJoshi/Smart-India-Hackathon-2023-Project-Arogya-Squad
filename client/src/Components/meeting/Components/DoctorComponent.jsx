@@ -34,7 +34,7 @@ const DoctorComponent = ({ data, loading, handleListItemClick }) => {
             >
               <List.Item.Meta
                 avatar={<Avatar src={item.photo} />}
-                title={`${item.firstName} ${item.lastName}`}
+                title={`${item.firstName} ${item.lastName}`} style={{marginLeft:"80px"}}
               />
             </List.Item>
           </a>

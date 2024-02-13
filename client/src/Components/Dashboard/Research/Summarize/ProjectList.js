@@ -6,6 +6,7 @@ import { formatDate } from "../../../js/formatDate";
 import { useState } from "react";
 import "../../../../css/Research.css";
 import Avatar from "@mui/material/Avatar";
+import Sidebar from "G:/Projects/SIH 2023/SIH1341_16581_Arogya_Squad/SIH1341_16581_Arogya_Squad/client/src/Components/Dashboard/Home/Sidebar.js"
 
 export default function ProjectList() {
   const [files, updateFiles] = useState([]);
@@ -45,7 +46,8 @@ export default function ProjectList() {
   }
 
   return (
-    <Container style={{ padding: "4% 8%" }} fluid>
+    <Container  fluid>
+      <Sidebar />
       <Row>
         <Col>
           <div className="submit-file">

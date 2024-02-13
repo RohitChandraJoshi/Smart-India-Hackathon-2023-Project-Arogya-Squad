@@ -140,6 +140,7 @@ body .posts .post-title {
 
 .toggle-button {
   /* cursor: pointer; */
+  z-index: 1000;
   padding: 10px;
   display: flex;
   flex-direction: column;
@@ -148,21 +149,27 @@ body .posts .post-title {
 }
 @media only screen and (max-width: 600px) {
   .app-container.show-sidebar {
-    margin-left: 0;
+    position: relative;
+    
   }
 
   .sidebar {
-    width: 100%;
-    display: block;
+    margin-top: 0;
+    background-color: rgba(250, 245, 245, 0.842);
+    color: black;
     position: fixed;
-    z-index: 1;
-    overflow-x: hidden;
-    transition: 0.5s;
-    background-color: #111;
+    z-index: 1000;
+    height: 100vh;
+    border-radius: 0px 0px 15px 0px;
+    max-width: 200px;
+    min-width: 6px; /* Adjust the min-width as needed */
+    transition: min-width 0.3s ease; /* Transition on min-width */
+    background: linear-gradient(to top,#ff99337b , white);
   }
 
   .sidebar ul {
     margin-top: 50px;
+  
   }
 
   .toggle-button {
@@ -170,9 +177,16 @@ body .posts .post-title {
     position: fixed;
     top: 20px;
     left: 20px;
-    z-index: 2;
+    z-index: 1000;
+  }
+  .sidebar .link {
+    margin-right: 50px;
+    position: relative;
+    overflow: hidden;
   }
 }
+
+
 /* .line {
   margin-top: 50px;
   width: 25px;
@@ -182,7 +196,8 @@ body .posts .post-title {
 } */
 
 .show-sidebar .sidebar {
-  width: 320px;
+  width: 100px;
+  display: flex;
 }
 
 .toggle-button {
@@ -259,11 +274,20 @@ body .posts .post-title {
     width: 100%; /* Make buttons full width */
   }
 
-  .sidebar {
-    width: 80px; /* Adjust sidebar width for smaller screens */
+  .sidebarx {
+    margin-top: 0;
+    background-color: rgba(250, 245, 245, 0.842);
+    color: black;
+    
+    height: 100vh;
+    border-radius: 0px 0px 15px 0px;
+    max-width: 100px;
+    overflow: hidden;
+    transition: width 0.3s ease;
+    background: linear-gradient(to top,#ff99337b , white);
   }
-
   .toggle-icon {
+    z-index: 10001;
     width: 40px; /* Adjust toggle icon size */
     margin-top: 15px; /* Adjust margin for smaller screens */
   }
@@ -276,4 +300,73 @@ body .posts .post-title {
     display: none;
   }
   
+}
+
+.app-container {
+  
+  display: flex;
+}
+
+.sidebarx {
+  /* Your sidebar styles */
+  width: 25px; /* Adjust the width as needed */
+  position: fixed;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #fff; /* Example background color */
+  z-index: 1000; /* Ensure sidebar is on top of other content */
+}
+
+.content {
+  /* Your content styles */
+  flex: 1;
+  padding-left: 250px; /* Adjust padding to account for sidebar width */
+}
+
+.toggle-button {
+  /* Your toggle button styles */
+}
+
+.show-sidebar .content {
+  padding-left: 0; /* Remove padding when sidebar is shown */
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0px;
+}
+.sidebarx {
+  margin-top: 0;
+  background-color: rgba(250, 245, 245, 0.842);
+  color: black;
+  
+  height: 100vh;
+  border-radius: 0px 0px 15px 0px;
+  width: 100px;
+  overflow: hidden;
+  transition: width 0.3s ease;
+  background: linear-gradient(to top,#ff99337b , white);
+}
+
+.sidebarx li {
+  margin: 5px;
+  padding: 8px;
+}
+
+.sidebarx a {
+  margin-top: 10px;
+  text-decoration: none;
+  /* color: #000000; */
+  font-size: 16px;
+  padding: 5px;
+  display: block;
+  transition: background-color 0.3s;
+}
+
+.sidebarx li:hover {
+  background-color:  #ff9933;
+  border-radius: 20px;
+  transform: translateY(-8%);
+  transition: 0.4s;
 }

@@ -13,13 +13,16 @@ footer {
     margin-bottom: 5px;
     justify-content: space-between;
   }
-  
+  .contact{
+    margin-top: 20px;
+  }
   .contact-heading h3 {
     font-size: 1.5em;
     margin-bottom: 0.5em;
   }
   
   .contact-info {
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
   }

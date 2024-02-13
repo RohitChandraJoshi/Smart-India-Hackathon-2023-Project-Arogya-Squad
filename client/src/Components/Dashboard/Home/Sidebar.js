@@ -53,7 +53,7 @@ const StudentBody = () => {
   return (
     <div className="user-box">
       <div className={`app-container ${showSidebar ? "show-sidebar" : ""}`}>
-        <div className="sidebar">
+        <div className="sidebarx">
           <ul>
           <li>
               <NavLink to="/dashboard">
@@ -61,7 +61,7 @@ const StudentBody = () => {
                   <div className="icon">
                     <img src={HomeIcon} />
                   </div>
-                  Home
+
                 </div>
               </NavLink>
             </li>
@@ -71,7 +71,7 @@ const StudentBody = () => {
                   <div className="icon">
                     <img src={TaskIcon} />
                   </div>
-                  Task Manager
+  
                 </div>
               </NavLink>
             </li>
@@ -81,7 +81,7 @@ const StudentBody = () => {
                   <div className="icon">
                     <img src={SubmitProjectIcon} />
                   </div>
-                  Submit Project Idea
+   
                 </div>
               </NavLink>
             </li>
@@ -91,7 +91,7 @@ const StudentBody = () => {
                   <div className="icon">
                     <img src={TopicIcon} />
                   </div>
-                  Topic Recommendation
+
                 </div>
               </NavLink>
             </li>
@@ -101,7 +101,7 @@ const StudentBody = () => {
                   <div className="icon">
                     <img src={Lens} />
                   </div>
-                  Topic Duplicacy Checker
+  
                 </div>
               </NavLink>
             </li>
@@ -112,7 +112,7 @@ const StudentBody = () => {
                   <div className="icon">
                     <img src={MeetIcon} />
                   </div>
-                  Meeting with guide
+
                 </div>
               </NavLink>
             </li>
@@ -122,40 +122,22 @@ const StudentBody = () => {
                   <div className="icon">
                     <img src={PieChartICon} />
                   </div>
-                  Student to Guide ratio
+   
                 </div>
               </NavLink>
             </li>
-            <button className="logout-button" onClick={handleLogout} style ={{"margin-left": "60px"}}>
-            Logout
-          </button>
+
+
+
+
 
           </ul>
         </div>
 
-        <div
-          className={`toggle-button ${showSidebar ? "open" : ""}`}
-          onClick={toggleSidebar}
-        >
-          <img
-            className="toggle-icon"
-            src={toggleButtonImage}
-            alt="Toggle Sidebar"
-          />
-        </div>
-        <div className="content">
-          <div className="dashboard">
-            <StudentToGuideRatio />
-          </div>
-        </div>
-        <div className="right-side">
-          <RightNav />
-        </div>
+
+
       </div>
 
-      <div>
-        <Footer />
-      </div>
     </div>
   );
 };

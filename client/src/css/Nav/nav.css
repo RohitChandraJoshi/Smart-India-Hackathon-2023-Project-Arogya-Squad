@@ -53,12 +53,9 @@
   }
 
   /* Sidebar */
-  .sidebar {
-    width: 60px; /* Reduce width */
-  }
 
   .sidebar li {
-    padding: 5px;
+    padding: 1px;
   }
 
   .sidebar a {

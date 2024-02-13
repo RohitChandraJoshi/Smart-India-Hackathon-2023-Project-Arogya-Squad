@@ -3,6 +3,8 @@ import { formatDate } from "../../../js/formatDate";
 import CheckIcon from "@mui/icons-material/Check";
 import CloseIcon from "@mui/icons-material/Close";
 import Close from "@mui/icons-material/Close";
+import Sidebar from "G:/Projects/SIH 2023/SIH1341_16581_Arogya_Squad/SIH1341_16581_Arogya_Squad/client/src/Components/Dashboard/Home/Sidebar.js"
+
 import { Button } from "@mui/material";
 export default function Faculty() {
   const [students, updateStudents] = useState([]);
@@ -41,7 +43,8 @@ export default function Faculty() {
   }, []);
   return (
     <div className="project-guide-info">
-      <h3>Project Details</h3>
+      <Sidebar />
+      <h3 style={{marginLeft:"100px"}} > Project Details</h3>
 
       <div className="flex-container">
         <div className="full-width-column">

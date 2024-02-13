@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../../../css/UserProfile/user.css";
 import { Configuration, OpenAIApi } from "openai"; // Updated import statement
-
+import Sidebar from "G:/Projects/SIH 2023/SIH1341_16581_Arogya_Squad/SIH1341_16581_Arogya_Squad/client/src/Components/Dashboard/Home/Sidebar.js"
 export default function TopicRecommendation() {
   const [areaOfInterest, setAreaOfInterest] = useState("");
   const [specilization, setspecilization] = useState("");
@@ -64,6 +64,7 @@ export default function TopicRecommendation() {
 
   return (
     <div className="App_">
+      <Sidebar />
       <div className="topicheader">
         <h1>Topic Recommender</h1>
         <h2>Get Recommended Topics for Your Research Work using AI</h2>

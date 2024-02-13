@@ -5,6 +5,8 @@ import axios from 'axios';
 import Modal from 'react-modal';
 import 'bootstrap/dist/css/bootstrap.min.css'; 
 import './App.css'; 
+import Sidebar from "G:/Projects/SIH 2023/SIH1341_16581_Arogya_Squad/SIH1341_16581_Arogya_Squad/client/src/Components/Dashboard/Home/Sidebar.js"
+
 function App() {
   const [fetchedTopic, setFetchedTopic] = useState('');
   const [enteredTopic, setEnteredTopic] = useState('');
@@ -80,6 +82,7 @@ function App() {
 
   return (
     <div className="container">
+      <Sidebar />
       <h3 className="display-4">Submit your Unique Topic</h3>
       <div className="form-group">
         <label htmlFor="topicInput">Enter Topic:</label>

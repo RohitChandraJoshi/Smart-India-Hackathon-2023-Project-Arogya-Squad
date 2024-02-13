@@ -6,12 +6,15 @@ import 'antd/dist/antd.css';
 import { Routes, Route } from 'react-router-dom';
 import SideMenu from './Components/SideMenu';
 import routes from './Routes/routes';
+import Sidebar from "G:/Projects/SIH 2023/SIH1341_16581_Arogya_Squad/SIH1341_16581_Arogya_Squad/client/src/Components/Dashboard/Home/Sidebar.js"
+
 const { Title } = Typography;
 const { Header, Content, Footer } = Layout;
 const titleStyle = {
   color: '#fff',
   textAlign: 'center',
   margin: '5px',
+  fontSize: '30px',
   textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)',
 };
 
@@ -37,6 +40,7 @@ function Meeting() {
 
   return (
     <Layout>
+      <Sidebar />
        <Layout style={{ height: '100vh' }}>
       <Header style={headerStyle}>
         <div >

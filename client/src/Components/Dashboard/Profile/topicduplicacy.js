@@ -4,7 +4,7 @@ import { compareTwoStrings } from 'string-similarity';
 import axios from 'axios';
 import Modal from 'react-modal';
 import styles from  'G:/Projects/SIH 2023/SIH1341_16581_Arogya_Squad/SIH1341_16581_Arogya_Squad/client/src/css/topic.module.css';
-
+import Sidebar from "G:/Projects/SIH 2023/SIH1341_16581_Arogya_Squad/SIH1341_16581_Arogya_Squad/client/src/Components/Dashboard/Home/Sidebar.js"
 function Topic() {
   const [enteredTopic, setEnteredTopic] = useState('');
   const [selectedGuide, setSelectedGuide] = useState('');
@@ -80,6 +80,7 @@ function Topic() {
 
   return (
     <div className={styles.container}>
+      <Sidebar />
       <div className={styles.backgroundBox}>
         <h2 className={styles.header}>Topic Duplicacy Checker</h2>
         <h3 className={styles.subheader}>Check Plagiarism in Your Research Topic</h3>

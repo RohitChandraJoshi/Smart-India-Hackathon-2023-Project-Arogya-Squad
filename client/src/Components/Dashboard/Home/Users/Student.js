@@ -11,6 +11,7 @@ import { formatDate } from "../../../js/formatDate";
 import { compareTwoStrings } from "string-similarity"; // Import the comparison function
 import axios from 'axios'; // Import axios for API requests
 import Modal from 'react-modal'; // Import Modal for displaying popups
+import Sidebar from "G:/Projects/SIH 2023/SIH1341_16581_Arogya_Squad/SIH1341_16581_Arogya_Squad/client/src/Components/Dashboard/Home/Sidebar.js"
 
 export default function Student() {
   const [showProject, updateProject] = useState(false);
@@ -112,10 +113,11 @@ export default function Student() {
 
   return (
     <div>
+      <Sidebar />
       {/* Existing UI code */}
       {showProject ? (
         <div className="project-details">
-          <h2 style={{ marginBottom: "20px" }}>Project Details</h2>
+          <h2 style={{ marginBottom: "20px", marginLeft:"120px" }}>Project Details</h2>
           <div className="flex-container">
             <div className="full-width-column">
               <div className="header column">Student name</div>

@@ -5,6 +5,7 @@ import NavBar from "../Common/Nav";
 import UserBody from "./GuideBody";
 import { useEffect, useState } from "react";
 import { checkLogin } from "../js/checkLogin";
+import Sidebar from "G:/Projects/SIH 2023/SIH1341_16581_Arogya_Squad/SIH1341_16581_Arogya_Squad/client/src/Components/Dashboard/Home/Sidebar.js"
 
 export default function TrackProgress() {
   const [isLoggedIn, changeState] = useState(false);
@@ -16,6 +17,7 @@ export default function TrackProgress() {
   });
   return (
     <div>
+      <Sidebar />
       {isLoggedIn && (
         <div>
           {" "}
