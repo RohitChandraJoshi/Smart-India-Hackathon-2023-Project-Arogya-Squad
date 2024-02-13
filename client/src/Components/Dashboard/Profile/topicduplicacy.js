@@ -4,6 +4,7 @@ import axios from 'axios';
 import Modal from 'react-modal';
 import styles from  'G:/Projects/SIH 2023/SIH1341_16581_Arogya_Squad/SIH1341_16581_Arogya_Squad/client/src/css/topic.module.css';
 import Sidebar from "G:/Projects/SIH 2023/SIH1341_16581_Arogya_Squad/SIH1341_16581_Arogya_Squad/client/src/Components/Dashboard/Home/Sidebar.js"
+
 function Topic() {
   const [enteredTopic, setEnteredTopic] = useState('');
   const [selectedGuide, setSelectedGuide] = useState('');
@@ -12,8 +13,11 @@ function Topic() {
   const [similarTopics, setSimilarTopics] = useState([]);
   const [topicSubmitted, setTopicSubmitted] = useState(false);
   const [modalIsOpen, setModalIsOpen] = useState(false);
+  const [submitLoading, setSubmitLoading] = useState(false); 
 
   const handleCompare = () => {
+    setSubmitLoading(true); 
+    
     axios
       .get(`https://sih-topic-duplicacy-checker.onrender.com/get-google-scholar-results?topic=${encodeURIComponent(enteredTopic)}`)
       .then((response) => {
@@ -71,9 +75,14 @@ function Topic() {
               setTopicSubmitted(false);
             });
         }
+
+      
+        setSubmitLoading(false);
       })
       .catch((error) => {
         console.error('Error fetching Google Scholar results:', error);
+
+        setSubmitLoading(false);
       });
   };
 
@@ -131,7 +140,9 @@ function Topic() {
           </select>
         </div>
         <div className={styles.compareBtnContainer}>
-          <button className={styles.compareBtn} onClick={handleCompare}>Submit</button>
+          <button className={styles.compareBtn} onClick={handleCompare} disabled={submitLoading}>
+            {submitLoading ? 'Submitting...' : 'Submit'}
+          </button>
         </div>
         {similarity !== null && (
           <div>
@@ -174,7 +185,6 @@ function Topic() {
       </div>
     </div>
   );
-  
 }
 
 export default Topic;
