@@ -112,7 +112,7 @@ body.modalopen {
     backdrop-filter: blur(5px); 
   }
   .backgroundBox {
-    background: linear-gradient(to right, #009245, #FCEE21); /* Updated gradient background */
+    background: linear-gradient(to right, #009245, #FCEE21); 
     border-radius: 8px;
     padding: 10px;
     box-shadow: 0 0 10px rgba(225, 150, 10, 0.1);
@@ -166,11 +166,11 @@ body.modalopen {
       padding: 10px;
     }
     .container h1 {
-      font-size: 2em; /* Further adjust font size for smaller screens if needed */
+      font-size: 2em; 
     }
   
     .container h2 {
-      font-size: 18px; /* Further adjust font size for smaller screens if needed */
+      font-size: 18px; 
     }
     .appHeader {
       font-size: 24px;

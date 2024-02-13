@@ -50,4 +50,23 @@
     color: #333;
     font-size: 1.2em;
   }
+  @media only screen and (max-width: 600px) {
+    .student-guide-ratio-page .headerx {
+      padding: 15px; /* Reduce padding for header */
+    }
   
+    .student-guide-ratio-page .headerx h2 {
+      font-size: 1.8em; /* Decrease font size for header */
+      margin-bottom: 10px; /* Decrease margin for header */
+    }
+  
+    .chart-container {
+      height: 300px; /* Adjust height of chart container */
+      width: 90%; /* Adjust width of chart container */
+      margin-top: 40px; /* Increase margin-top for better spacing */
+    }
+  
+    .student-guide-ratio-page p {
+      font-size: 1em; /* Decrease font size for paragraph */
+    }
+  }

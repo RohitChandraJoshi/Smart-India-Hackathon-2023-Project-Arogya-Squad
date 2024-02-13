@@ -1,4 +1,3 @@
-// App.js
 import React, { useState } from 'react';
 import { compareTwoStrings } from 'string-similarity';
 import axios from 'axios';

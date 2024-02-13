@@ -25,7 +25,7 @@ const StudentGuideRatioPage = () => {
       <div className="headerx">
         <h2>Student Guide Ratio Chart</h2>
       </div>
-      <div style={{ height: '500px', width: '700px', marginTop: '10%' }}>
+      <div style={{ height: '450px', width: '650px', marginTop: '10%' }}>
         <Pie
           data={chartData}
           options={{
